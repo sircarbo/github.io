@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Florida Jail Directory - All 67 Counties</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);padding:15px}
+.container{max-width:1200px;margin:0 auto;background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+header{background:linear-gradient(135deg,#1e3c72,#2a5298);color:#fff;padding:25px;text-align:center;border-radius:15px 15px 0 0}
+header h1{font-size:1.8em;margin-bottom:8px}.content{padding:20px}
+.region{margin-bottom:15px;border:2px solid #e0e0e0;border-radius:10px;overflow:hidden}
+.region-header{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:15px;cursor:pointer;display:flex;justify-content:space-between}
+.region-header:hover{background:linear-gradient(135deg,#5568d3,#6a3f8f)}
+.region-header h2{font-size:1.2em;margin:0}.count{background:rgba(255,255,255,.2);padding:3px 10px;border-radius:15px;font-size:.85em}
+.arrow{font-size:1.2em;transition:transform .3s}.arrow.open{transform:rotate(180deg)}
+.grid{display:none;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;padding:15px;background:#f8f9fa}
+.grid.show{display:grid}.card{background:#fff;border-radius:8px;padding:10px;border-left:4px solid #667eea}
+.card:hover{box-shadow:0 3px 10px rgba(0,0,0,.15)}.card h3{color:#1e3c72;font-size:1em;margin-bottom:8px;border-bottom:2px solid #667eea;padding-bottom:5px}
+.info{margin:5px 0;font-size:.75em}.lbl{font-weight:bold;color:#555}.val a{color:#667eea;text-decoration:none}
+.val a:hover{color:#764ba2;text-decoration:underline}.btn{display:inline-block;background:#667eea;color:#fff;padding:4px 8px;border-radius:4px;text-decoration:none;margin-top:5px;font-size:.7em}
+.btn:hover{background:#764ba2}footer{background:#f8f9fa;text-align:center;padding:15px;color:#666;border-top:1px solid #ddd}
+</style>
+</head>
+<body>
+<div class="container">
+<header><h1>🏛️ Florida County Jail Directory</h1><p>All 67 Counties - Click regions to expand</p></header>
+
+<div class="content">
+
+<!-- TAMPA BAY (16) -->
+<div class="region">
+<div class="region-header" onclick="toggle('tb')"><div><h2>Tampa Bay Area</h2><span class="count">16</span></div><span class="arrow" id="a-tb">▼</span></div>
+<div class="grid" id="tb">
+<div class="card"><h3>Charlotte</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=250+Zemel+Rd+Punta+Gorda+FL" target="_blank">250 Zemel Rd, Punta Gorda</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9415751500">(941) 575-1500</a></div><a href="https://www.ccso.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Citrus</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=2604+W+Woodland+Ridge+Lecanto+FL" target="_blank">2604 W Woodland Ridge, Lecanto</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3525136100">(352) 513-6100</a></div><a href="https://www.citrus-co.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>DeSoto</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=108+S+Hillsborough+Arcadia+FL" target="_blank">108 S Hillsborough, Arcadia</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8639934700">(863) 993-4700</a></div><a href="https://www.desotoso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Hardee</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=900+E+Summit+Wauchula+FL" target="_blank">900 E Summit, Wauchula</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8637730304">(863) 773-0304</a></div><a href="https://www.hardeesheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Hernando</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=18900+Cortez+Brooksville+FL" target="_blank">18900 Cortez, Brooksville</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3527546830">(352) 754-6830</a></div><a href="https://www.hernandosheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Highlands</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=434+Fernleaf+Sebring+FL" target="_blank">434 Fernleaf, Sebring</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8634024730">(863) 402-4730</a></div><a href="https://www.highlandssheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Hillsborough</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=2008+E+8th+Tampa+FL" target="_blank">2008 E 8th Ave, Tampa</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8132478300">(813) 247-8300</a></div><a href="https://www.hcso.tampa.fl.us" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Lake</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=551+W+Main+Tavares+FL" target="_blank">551 W Main, Tavares</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3523436642">(352) 343-6642</a></div><a href="https://www.lakesheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Manatee</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=1025+Manatee+Bradenton+FL" target="_blank">1025 Manatee Ave, Bradenton</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9417473011">(941) 747-3011</a></div><a href="https://www.manateesheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Marion</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=692+NW+30th+Ocala+FL" target="_blank">692 NW 30th, Ocala</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3523691800">(352) 369-1800</a></div><a href="https://www.marionso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Osceola</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=2601+E+Irlo+Kissimmee+FL" target="_blank">2601 E Irlo Bronson, Kissimmee</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:4073484450">(407) 348-4450</a></div><a href="https://www.osceola.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Pasco</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=20101+Central+Land+O+Lakes+FL" target="_blank">20101 Central, Land O Lakes</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:7278447711">(727) 844-7711</a></div><a href="https://pascosheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Pinellas</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=14400+49th+Clearwater+FL" target="_blank">14400 49th St N, Clearwater</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:7274646415">(727) 464-6415</a></div><a href="https://www.pcsoweb.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Polk</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=3433+Combee+Lakeland+FL" target="_blank">3433 Combee Rd, Lakeland</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8632971100">(863) 297-1100</a></div><a href="https://www.polksheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Sarasota</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=2095+Ringling+Sarasota+FL" target="_blank">2095 Ringling, Sarasota</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9418614900">(941) 861-4900</a></div><a href="https://www.sarasotasheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Sumter</h3><div class="info"><span class="lbl">Loc:</span> <span class="val"><a href="https://www.google.com/maps/search/?api=1&query=7361+Powell+Wildwood+FL" target="_blank">7361 Powell Rd, Wildwood</a></span></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3525691610">(352) 569-1610</a></div><a href="https://www.sumtercountysheriff.org" target="_blank" class="btn">Search</a></div>
+</div>
+</div>
+
+<!-- NORTHWEST (10) -->
+<div class="region">
+<div class="region-header" onclick="toggle('nw')"><div><h2>Northwest Florida</h2><span class="count">10</span></div><span class="arrow" id="a-nw">▼</span></div>
+<div class="grid" id="nw">
+<div class="card"><h3>Bay</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=3421+Pretty+Bayou+Panama+City+FL" target="_blank">3421 Pretty Bayou, Panama City</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8507477000">(850) 747-7000</a></div><a href="https://www.baycoso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Escambia</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=3300+W+Leonard+Pensacola+FL" target="_blank">3300 W Leonard, Pensacola</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8504367900">(850) 436-7900</a></div><a href="https://www.escambiaso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Franklin</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=270+SR+65+Eastpoint+FL" target="_blank">270 SR 65, Eastpoint</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8506973263">(850) 697-3263</a></div><a href="https://www.franklincountysheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Gadsden</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=16+E+Jefferson+Quincy+FL" target="_blank">16 E Jefferson, Quincy</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8506275145">(850) 627-5145</a></div><a href="https://www.gadsdensheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Gulf</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=1000+Cecil+Costin+Port+St+Joe+FL" target="_blank">1000 Cecil Costin, Port St Joe</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8502294911">(850) 229-4911</a></div><a href="https://www.gulfso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Holmes</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=206+N+Oklahoma+Bonifay+FL" target="_blank">206 N Oklahoma, Bonifay</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8505473256">(850) 547-3256</a></div><a href="https://www.holmescountysheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Jackson</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=4445+Kelson+Marianna+FL" target="_blank">4445 Kelson, Marianna</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8504826111">(850) 482-6111</a></div><a href="https://www.jcsoflorida.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Okaloosa</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=1250+N+Eglin+Shalimar+FL" target="_blank">1250 N Eglin, Shalimar</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8506519111">(850) 651-9111</a></div><a href="https://www.okaloosaso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Santa Rosa</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=5755+E+Milton+Milton+FL" target="_blank">5755 E Milton Rd, Milton</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8509831150">(850) 983-1150</a></div><a href="https://www.santarosasheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Walton</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=750+Triple+G+DeFuniak+Springs+FL" target="_blank">750 Triple G, DeFuniak Springs</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8508923135">(850) 892-3135</a></div><a href="https://www.waltonso.org" target="_blank" class="btn">Search</a></div>
+</div>
+</div>
+
+<!-- NORTHEAST (13) -->
+<div class="region">
+<div class="region-header" onclick="toggle('ne')"><div><h2>Northeast Florida</h2><span class="count">13</span></div><span class="arrow" id="a-ne">▼</span></div>
+<div class="grid" id="ne">
+<div class="card"><h3>Alachua</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=3333+NE+39th+Gainesville+FL" target="_blank">3333 NE 39th, Gainesville</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3523743603">(352) 374-3603</a></div><a href="https://www.alachuasheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Baker</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=1200+S+6th+Macclenny+FL" target="_blank">1200 S 6th, Macclenny</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9042595121">(904) 259-5121</a></div><a href="https://www.bakerso.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Bradford</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=945+N+Temple+Starke+FL" target="_blank">945 N Temple, Starke</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9049665161">(904) 966-5161</a></div><a href="https://www.bcso.us" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Clay</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=901+N+Orange+Green+Cove+Springs+FL" target="_blank">901 N Orange, Green Cove Springs</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9042643721">(904) 264-3721</a></div><a href="https://www.claycountysheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Columbia</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=4917+US+90+Lake+City+FL" target="_blank">4917 US 90, Lake City</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3867587700">(386) 758-7700</a></div><a href="https://www.ccsolakecity.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Dixie</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=402+NE+351st+Cross+City+FL" target="_blank">402 NE 351st, Cross City</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3524982790">(352) 498-2790</a></div><a href="https://www.dixieso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Duval</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=500+E+Adams+Jacksonville+FL" target="_blank">500 E Adams, Jacksonville</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9046300500">(904) 630-0500</a></div><a href="https://www.jaxsheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Flagler</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=901+E+Moody+Bunnell+FL" target="_blank">901 E Moody, Bunnell</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3864137200">(386) 413-7200</a></div><a href="https://www.flaglersheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Gilchrist</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=9247+US+129+Trenton+FL" target="_blank">9247 US 129, Trenton</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3524632245">(352) 463-2245</a></div><a href="https://www.gilchristsheriff.org" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Hamilton</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=1153+US+41+Jasper+FL" target="_blank">1153 US 41, Jasper</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3867923312">(386) 792-3312</a></div><a href="https://www.hamiltoncountysheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Lafayette</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=120+NE+Crawford+Mayo+FL" target="_blank">120 NE Crawford, Mayo</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:3862942046">(386) 294-2046</a></div><a href="https://www.lafayetteso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Nassau</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=77151+Citizens+Yulee+FL" target="_blank">77151 Citizens Cir, Yulee</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9044910900">(904) 491-0900</a></div><a href="https://www.nassauso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>St. Johns</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=4015+Lewis+St+Augustine+FL" target="_blank">4015 Lewis Speedway, St Augustine</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:9048245100">(904) 824-5100</a></div><a href="https://www.sjso.org" target="_blank" class="btn">Search</a></div>
+</div>
+</div>
+
+<!-- CENTRAL WEST (4) -->
+<div class="region">
+<div class="region-header" onclick="toggle('cw')"><div><h2>Central West Florida</h2><span class="count">4</span></div><span class="arrow" id="a-cw">▼</span></div>
+<div class="grid" id="cw">
+<div class="card"><h3>Jefferson</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=1484+S+Jefferson+Monticello+FL" target="_blank">1484 S Jefferson, Monticello</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8509975590">(850) 997-5590</a></div><a href="https://www.jeffersonso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Leon</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=555+Appleyard+Tallahassee+FL" target="_blank">555 Appleyard, Tallahassee</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8509226300">(850) 922-6300</a></div><a href="https://www.leoncountyso.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Taylor</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=108+N+Jefferson+Perry+FL" target="_blank">108 N Jefferson, Perry</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8505843227">(850) 584-3227</a></div><a href="https://www.taylorcountysheriff.com" target="_blank" class="btn">Search</a></div>
+<div class="card"><h3>Wakulla</h3><div class="info"><span class="lbl">Loc:</span> <a href="https://www.google.com/maps/search/?api=1&query=15+Oak+St+Crawfordville+FL" target="_blank">15 Oak St, Crawfordville</a></div><div class="info"><span class="lbl">Ph:</span> <a href="tel:8509267171">(850) 926-7171</a></div><a href="https://www.wcso.org" target="_blank" class="btn">Search</a></div>
+</div>
+</div>
+
+<!-- CENTRAL EAST (6) -->
+<div class="region">
+<div class="region-header" onclick="toggle('ce')"><div><h2>Central East Florida</h2><span class="count">6</span></div><span class="arrow" id="a-ce">▼</span></div>
+<div class="grid" id="ce">
+<div class="card"><h3>Brevard</h3><div
